@@ -13,7 +13,7 @@ const queue = kue.createQueue({
 });
 
 app.get('/', function(req, res) {
-  console.log("test 1")
+  console.log("test 2")
   var job = queue.create('notify', {
     time: new Date(),
   }).save(function(err){
